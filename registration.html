@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Fees</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+    /* ===============================
+       SAFE PROFESSIONAL THEME OVERRIDE
+       (NO HTML / JS / TAILWIND TOUCHED)
+       =============================== */
+
+    body {
+      font-family: 'League Spartan', sans-serif;
+      background: linear-gradient(180deg, #0b0f19 0%, #111827 45%, #1f2937 100%) !important;
+      color: #e5e7eb !important;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #020617, #0f172a, #020617) !important;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.65);
+    }
+
+    /* Navigation */
+    nav a {
+      color: #cbd5e1 !important;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+
+    nav a:hover {
+      color: #60a5fa !important;
+    }
+
+    /* Mobile Menu */
+    #mobile-menu {
+      background-color: #020617 !important;
+      color: #cbd5e1 !important;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.85);
+    }
+
+    #mobile-menu a:hover {
+      background-color: #020617 !important;
+      color: #60a5fa !important;
+    }
+
+    /* Headings */
+    h1 {
+      background: linear-gradient(90deg, #60a5fa, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 0.4px;
+    }
+
+    h2, h3 {
+      color: #93c5fd !important;
+    }
+
+    /* Text */
+    p, td, th {
+      color: #d1d5db !important;
+    }
+
+    /* Links */
+    a {
+      color: #60a5fa !important;
+    }
+
+    a:hover {
+      color: #93c5fd !important;
+      text-decoration: underline;
+    }
+
+    /* Table Styling */
+    table {
+      background: rgba(255,255,255,0.03);
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.7);
+    }
+
+    thead {
+      background: rgba(59,130,246,0.15);
+    }
+
+    tbody tr:hover {
+      background: rgba(59,130,246,0.08);
+      transition: background 0.3s ease;
+    }
+
+    /* Payment Button */
+    a.bg-gradient-to-r {
+      background: linear-gradient(135deg, #2563eb, #3b82f6) !important;
+      box-shadow: 0 15px 40px rgba(37,99,235,0.45);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    a.bg-gradient-to-r:hover {
+      transform: scale(1.05);
+      box-shadow: 0 25px 60px rgba(59,130,246,0.6);
+    }
+
+    /* AI Icon */
+    .ai-icon {
+      background: url("https://raw.githubusercontent.com/Adityachoubey-git/ICAMC-HMRITM-2025/5865f8f8cfa8a153757448bc2d5fab5c911afb4d/images/logo.203acbf6.svg") no-repeat center;
+      background-size: contain;
+      filter: drop-shadow(0 0 14px rgba(59,130,246,0.6));
+    }
+
+    /* Map */
+    iframe {
+      border-radius: 1rem;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.75);
+      filter: grayscale(15%) contrast(105%);
+    }
+
+    /* Subtle animation */
+    section, main, header {
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-pink-50 text-gray-900">
+
+   <!-- Header -->
+  <header class="bg-pink-900 py-4">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <div class="logo">
+        <img class="w-20 h-15" src="https://raw.githubusercontent.com/Adityachoubey-git/ICAMC-HMRITM-2025/5865f8f8cfa8a153757448bc2d5fab5c911afb4d/images/logo.203acbf6.svg" alt="Logo">
+      </div>
+      <nav id="nav-links" class="hidden md:flex space-x-4">
+        <a href="/index.html" class="text-pink-200 hover:text-white mx-3">Home</a>
+        <a href="/index.html#Aboutus" class="text-pink-200 hover:text-white mx-3">About</a>
+        <a href="/tracks.html" class="text-pink-200 hover:text-white mx-3">Tracks</a>
+        <a href="./index.html" class="text-pink-200 hover:text-white mx-1">Contact</a>
+      </nav>
+      <button id="hamburger" class="md:hidden text-pink-200 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Menu -->
+  <div id="mobile-menu" class="hidden bg-pink-800 text-pink-200 md:hidden">
+    <a href="/index.html" class="block px-4 py-2 hover:bg-pink-700">Home</a>
+    <a href="/index.html#Aboutus" class="block px-4 py-2 hover:bg-pink-700">About</a>
+    <a href="/tracks.html" class="block px-4 py-2 hover:bg-pink-700">Tracks</a>
+    <a href="./index.html" class="block px-4 py-2 hover:bg-pink-700">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <main class="py-16">
+    <div class="container mx-auto px-6">
+      <!-- Title -->
+      <h1 class="text-5xl font-bold mb-5 text-center text-pink-800">Registration Fees</h1>
+
+      <!-- Registration Table -->
+      <section class="py-10 px-6">
+        <div class="max-w-5xl mx-auto">
+  <table class="w-full text-left table-auto border-collapse">
+    <thead class="text-blue-300">
+      <tr>
+        <th class="px-4 py-2 border-b border-blue-500">Category</th>
+        <th class="px-4 py-2 border-b border-blue-500">Early Bird Registration Fee</th>
+      </tr>
+    </thead>
+
+    <tbody class="text-gray-200">
+      <tr>
+        <td class="px-4 py-3 border-b border-blue-500">Faculty/Academician Participants</td>
+        <td class="px-4 py-3 border-b border-blue-500">INR 3000</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-3 border-b border-blue-500">Research Scholars/Students</td>
+        <td class="px-4 py-3 border-b border-blue-500">INR 2500</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-3 border-b border-blue-500">Research Scholars/Students (For two papers)</td>
+        <td class="px-4 py-3 border-b border-blue-500">INR 3750</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-3 border-b border-blue-500">Industry Participants</td>
+        <td class="px-4 py-3 border-b border-blue-500">INR 3500</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-3 border-b border-blue-500">Foreign Participants</td>
+        <td class="px-4 py-3 border-b border-blue-500">USD 100</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="mt-8 text-center">
+    <a
+  href="https://eps.eshiksa.net/DirectFeesv3/HMR_ICAMC"
+  target="_blank"
+  class="px-6 py-3 bg-gradient-to-r from-[#1e3a8a] to-[#2563eb] text-white font-semibold rounded-lg hover:from-[#1d4ed8] hover:to-[#3b82f6]"
+>
+  Payment Link
+</a>
+
+  </div>
+</div>
+
+      </section>
+
+      <!-- Conference Details -->
+      <section class="py-1 px-6 relative">
+  <div class="max-w-5xl mx-auto text-center relative">
+    <h2 class="text-4xl font-bold text-blue-300 flex items-center justify-center">
+      <span class="ai-icon w-60 h-10 mr-3  inline-block"></span> 
+    </h2>
+    <p class="text-gray-300 text-lg mt-4 italic">
+      International Conference on Emerging Applications of <br>
+      <span class="text-blue-300">Artificial Intelligence, Machine Learning,</span> <br>
+      and <span class="text-blue-300">Cybersecurity 2026</span>
+    </p>
+  </div>
+</section>
+
+
+      <!-- Map Integration -->
+      <section class="py-10 px-6 flex flex-col md:flex-row items-center">
+        <div class="w-full md:w-1/2 mb-8 md:mb-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.505619213644!2d77.15033821550202!3d28.82380308214822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390daaf4c884f85b%3A0x1c00e11a9ce7433c!2sHMR%20Institute%20of%20Technology%20and%20Management!5e0!3m2!1sen!2sin!4v1588921739579!5m2!1sen!2sin"
+            width="100%"
+            height="300"
+            class="border-0 rounded-lg shadow-lg"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="w-full md:w-1/2 text-center">
+          <h3 class="text-lg font-semibold text-pink-900">Event Venue:</h3>
+          <p class="text-pink-700">HMR Institute of Technology and Management</p>
+          <p class="text-pink-600">Plot No. 326, Bakoli HMRITM Rd, Delhi</p>
+          <p class="text-pink-600">New Delhi, 110036</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+</script>
+</body>
+</html>
+</html>

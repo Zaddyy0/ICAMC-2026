@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper Submission</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+    /* ===============================
+       SAFE PROFESSIONAL THEME OVERRIDE
+       (NO HTML / JS TOUCHED)
+       =============================== */
+
+    body {
+      font-family: 'League Spartan', sans-serif;
+      background: linear-gradient(180deg, #0b0f19 0%, #111827 45%, #1f2937 100%) !important;
+      color: #e5e7eb !important;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #020617, #0f172a, #020617) !important;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.65);
+    }
+
+    /* Navigation links */
+    nav a {
+      color: #cbd5e1 !important;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+
+    nav a:hover {
+      color: #60a5fa !important;
+    }
+
+    /* Mobile menu */
+    #mobile-menu {
+      background-color: #020617 !important;
+      color: #cbd5e1 !important;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.85);
+    }
+
+    #mobile-menu a:hover {
+      background-color: #020617 !important;
+      color: #60a5fa !important;
+    }
+
+    /* Headings */
+    h1 {
+      background: linear-gradient(90deg, #60a5fa, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 0.4px;
+    }
+
+    h2, h3 {
+      color: #93c5fd !important;
+    }
+
+    /* Paragraph text */
+    p {
+      color: #d1d5db !important;
+    }
+
+    /* Links */
+    a {
+      color: #60a5fa !important;
+    }
+
+    a:hover {
+      color: #93c5fd !important;
+      text-decoration: underline;
+    }
+
+    /* AI icon */
+    .ai-icon {
+      background: url("https://raw.githubusercontent.com/Adityachoubey-git/ICAMC-HMRITM-2025/5865f8f8cfa8a153757448bc2d5fab5c911afb4d/images/logo.203acbf6.svg") no-repeat center;
+      background-size: contain;
+      filter: drop-shadow(0 0 14px rgba(59,130,246,0.6));
+    }
+
+    /* Conference section polish */
+    section {
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    /* Map iframe */
+    iframe {
+      border-radius: 1rem;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.75);
+      filter: grayscale(15%) contrast(105%);
+    }
+
+    /* Footer */
+    .text-gray-500 {
+      color: #9ca3af !important;
+    }
+
+    /* Subtle animation */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  
+</head>
+
+<body class="bg-pink-50 text-gray-900">
+  <!-- Header -->
+  <header class="bg-pink-900 py-4">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <div class="logo">
+        <img class="w-20 h-15" src="https://raw.githubusercontent.com/Adityachoubey-git/ICAMC-HMRITM-2025/5865f8f8cfa8a153757448bc2d5fab5c911afb4d/images/logo.203acbf6.svg" alt="Logo">
+      </div>
+      <nav id="nav-links" class="hidden md:flex space-x-4">
+        <a href="/index.html" class="text-pink-200 hover:text-white mx-3">Home</a>
+        <a href="/index.html#Aboutus" class="text-pink-200 hover:text-white mx-3">About</a>
+        <a href="/tracks.html" class="text-pink-200 hover:text-white mx-3">Tracks</a>
+        <a href="./index.html" class="text-pink-200 hover:text-white mx-1">Contact</a>
+      </nav>
+      <button id="hamburger" class="md:hidden text-pink-200 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Menu -->
+  <div id="mobile-menu" class="hidden bg-pink-800 text-pink-200 md:hidden">
+    <a href="/index.html" class="block px-4 py-2 hover:bg-pink-700">Home</a>
+    <a href="/index.html#Aboutus" class="block px-4 py-2 hover:bg-pink-700">About</a>
+    <a href="/tracks.html" class="block px-4 py-2 hover:bg-pink-700">Tracks</a>
+    <a href="./index.html" class="block px-4 py-2 hover:bg-pink-700">Contact</a>
+  </div>
+
+  <!-- Main Container -->
+  <main class="py-11">
+    <div class="container mx-auto px-6">
+      <!-- Title -->
+      <h1 class="font-bold mb-5 text-xl  text-center text-pink-800">Based on the quality of submissions, papers will be published in the following journal/proceeding</h1>
+
+      <!-- Guidelines -->
+      <p class="text-pink-700 text-lg leading-relaxed mb-6">
+     • Selected quality papers will be considered for publication in the International Journal of Information Technology published by Springer Nature ( Scopus/UGC CARE)- subjected to final evaluation by Springer
+        <br>
+
+    • AIJR conference proceeding with ISBN number/ISSN number with doi number and indexed in major database like crossref, BASE, Google Scholar e.t.c.( check last year proceedings here at <a class="font-bold" href="https://books.aijr.org/index.php/press/catalog/book/178">click here</a> )
+  
+        <br>
+        • International Journal of Scientific Research and Engineering Trends (IJSRET)
+        <br>
+        • In HMRIJSTEM journal with ISSN Number.
+      </p>
+
+      <!-- Conference Details with AI Icons -->
+      <section class="py-10 px-6 relative">
+        <div class="max-w-5xl mx-auto text-center relative">
+  <h2 class="text-4xl font-bold text-blue-300 flex items-center justify-center">
+    <span class="ai-icon w-40 h-10 mr-6 inline-block"></span>
+  </h2>
+  <p class="text-gray-300 text-3xl mt-4 italic">
+    International Conference on Emerging Applications of <br>
+    <span class="text-blue-300">Artificial Intelligence, Machine Learning,</span> <br>
+    and <span class="text-blue-300">Cybersecurity 2026</span>
+  </p>
+</div>
+
+      </section>
+
+      <!-- Map Integration with Right Alignment -->
+      <section class="py-10 px-6 flex flex-col md:flex-row items-center">
+        <div class="w-full md:w-1/2 mb-8 md:mb-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.505619213644!2d77.15033821550202!3d28.82380308214822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390daaf4c884f85b%3A0x1c00e11a9ce7433c!2sHMR%20Institute%20of%20Technology%20and%20Management!5e0!3m2!1sen!2sin!4v1588921739579!5m2!1sen!2sin"
+            width="100%" height="300" class="border-0 rounded-lg shadow-lg" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="w-full md:w-1/2 text-center">
+          <h3 class="text-3xl font-semibold text-blue-300">Event Venue:</h3>
+          <p class="text-gray-400 text-2xl">HMR Institute of Technology and Management</p>
+          <p class="text-gray-500">Plot No. 326, Bakoli HMRITM Rd, Delhi</p>
+          <p class="text-gray-500">New Delhi, 110036</p>
+        </div>
+      </section>
+
+      <!-- Footer Bottom -->
+      <div class="text-center text-gray-500 text-sm mt-6">
+        &copy; 2026 ICAMC HMRITM. All Rights Reserved.
+      </div>
+      </footer>
+    </div>
+    </div>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>

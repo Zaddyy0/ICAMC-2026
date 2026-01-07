@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper Submission</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+    /* ===============================
+       GLOBAL THEME OVERRIDES (SAFE)
+       =============================== */
+
+    body {
+      font-family: 'League Spartan', sans-serif;
+      background: linear-gradient(180deg, #0b0f19 0%, #111827 45%, #1f2937 100%) !important;
+      color: #e5e7eb !important;
+    }
+
+    /* Header & Navigation */
+    header {
+      background: linear-gradient(90deg, #000000, #0f172a, #000000) !important;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    nav a {
+      color: #cbd5e1 !important;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #60a5fa !important;
+    }
+
+    #mobile-menu {
+      background-color: #020617 !important;
+      color: #cbd5e1 !important;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+    }
+
+    #mobile-menu a:hover {
+      background-color: #020617 !important;
+      color: #60a5fa !important;
+    }
+
+    /* Headings */
+    h1, h2, h3, h4 {
+      letter-spacing: 0.3px;
+    }
+
+    h1 {
+      background: linear-gradient(90deg, #60a5fa, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2, h3 {
+      color: #93c5fd !important;
+    }
+
+    h4 {
+      color: #bfdbfe !important;
+    }
+
+    /* Main guideline container */
+    section.bg-pink-100 {
+      background: rgba(255,255,255,0.04) !important;
+      backdrop-filter: blur(14px);
+      border-radius: 1rem;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.7);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    section.bg-pink-100:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 40px 100px rgba(59,130,246,0.25);
+    }
+
+    /* Lists & text */
+    ul li {
+      color: #d1d5db !important;
+      line-height: 1.75;
+    }
+
+    a {
+      color: #60a5fa !important;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #93c5fd !important;
+      text-decoration: underline;
+    }
+
+    /* Buttons */
+    a.bg-gradient-to-r {
+      background: linear-gradient(135deg, #2563eb, #3b82f6) !important;
+      box-shadow: 0 15px 40px rgba(37,99,235,0.45);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    a.bg-gradient-to-r:hover {
+      transform: scale(1.05);
+      box-shadow: 0 25px 60px rgba(59,130,246,0.6);
+    }
+
+    /* AI Logo */
+    .ai-icon {
+      background: url("https://raw.githubusercontent.com/Adityachoubey-git/ICAMC-HMRITM-2025/5865f8f8cfa8a153757448bc2d5fab5c911afb4d/images/logo.203acbf6.svg") no-repeat center;
+      background-size: contain;
+      filter: drop-shadow(0 0 14px rgba(59,130,246,0.6));
+    }
+
+    /* Map */
+    iframe {
+      filter: grayscale(20%) contrast(105%);
+      border-radius: 1rem;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.8);
+    }
+
+    /* Footer */
+    .text-gray-500 {
+      color: #9ca3af !important;
+    }
+
+    /* Subtle page animation */
+    section, header, main {
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-pink-50 text-gray-900">
+  <!-- YOUR ORIGINAL HTML BELOW -->
+  <!-- ⚠️ NOTHING REMOVED OR EDITED ⚠️ -->
+  <!-- (content unchanged – exactly as you sent) -->
+
+ <!-- Header -->
+  <header class="bg-pink-900 py-4">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <div class="logo">
+        <img class="w-20 h-15" src="https://raw.githubusercontent.com/Adityachoubey-git/ICAMC-HMRITM-2025/5865f8f8cfa8a153757448bc2d5fab5c911afb4d/images/logo.203acbf6.svg" alt="Logo">
+      </div>
+      <nav id="nav-links" class="hidden md:flex space-x-4">
+        <a href="/index.html" class="text-pink-200 hover:text-white mx-3">Home</a>
+        <a href="/index.html#Aboutus" class="text-pink-200 hover:text-white mx-3">About</a>
+        <a href="/tracks.html" class="text-pink-200 hover:text-white mx-3">Tracks</a>
+        <a href="./index.html" class="text-pink-200 hover:text-white mx-1">Contact</a>
+      </nav>
+      <button id="hamburger" class="md:hidden text-pink-200 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Menu -->
+  <div id="mobile-menu" class="hidden bg-pink-800 text-pink-200 md:hidden">
+    <a href="/index.html" class="block px-4 py-2 hover:bg-pink-700">Home</a>
+    <a href="/index.html#Aboutus" class="block px-4 py-2 hover:bg-pink-700">About</a>
+    <a href="/tracks.html" class="block px-4 py-2 hover:bg-pink-700">Tracks</a>
+    <a href="./index.html" class="block px-4 py-2 hover:bg-pink-700">Contact</a>
+  </div>
+
+
+
+  <!-- Main Container -->
+  <main class="py-11">
+    <div class="container mx-auto px-6">
+      <!-- Title -->
+      <h1 class="text-5xl font-bold mb-5 text-center text-pink-800">Guidelines</h1>
+   
+
+
+      <!-- <ul class="text-pink-600 text-md leading-relaxed list-disc list-inside mb-8 text-2xl">
+        <li>Papers should be original and not submitted elsewhere.</li>
+        <li>Minimum word count: 2500 words.</li>
+        <li>Papers must follow IEEE format.</li>
+        <li>At least one author must register for the conference.</li>
+        <li>Deadline for submission: <span class="font-bold"> March 15, 2026</span>.</li>
+      </ul> -->
+
+     
+      <!-- guildlines Section -->
+      <section class="mt-12 bg-pink-100 p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold text-pink-800 mb-4">Instruction to Authors</h2>
+   
+         
+        <ul class="list-disc list-inside text-pink-600">
+            
+          <li class="pb-3">All papers must be original and not simultaneously submitted to another journal or conference.</li>
+          <li class="pb-3">	All the manuscripts must adhere to Sample Template available at <a  href="./manuscript.22fdabf1 (1).pdf"><strong>click here.</strong></a></li>
+          <li class="pb-3">Decision of the organizers will be final and binding.</li>
+          <h2 class="text-2xl font-bold text-pink-800 mb-4">Author Guidelines</h2>
+          <h3 class="text-1xl font-bold text-pink-800 mb-4">1. Manuscript's File Format & Layout</h3>
+          <li class="pb-3">The manuscript shall be submitted in MS Word file format with A4, portrait, single column layout. For LaTeX file, format the whole manuscript should be in a single-column, A4, portrait layout and remove any unnecessary contents copied from the template. </li>
+          <h3 class="text-1xl font-bold text-pink-800 mb-4">2. Use of Generative AI Tools</h3>
+          <li class="pb-3">Reviewers will check if the manuscript contains any AI-generated content. Authors are allowed to use AI writing tools to improve language and readability, but AI tools should not be used to generate the research content. If AI tools were used, authors must clearly state in the manuscript that AI was only used for language improvement and not for generating contents. </li>
+          <h3 class="text-1xl font-bold text-pink-800 mb-4">3. Differentiating Research and Review Articles</h3>
+          <li class="pb-3"> Authors should clearly distinguish between research and review articles in both the title and content. The title should accurately reflect the nature of the work. Research articles focus on specific studies, methods, or findings, while review articles indicate an analysis of existing research. In research articles, terms like “this research” or “this study” are appropriate, but in review articles, authors should use phrases like “this review” or “this analysis” to avoid implying original research. Proper use of tense is also important; present tense should be used for general knowledge, while past tense is suitable for discussing specific studies. </li>
+          <h3 class="text-1xl font-bold text-pink-800 mb-4">4. Originality and Scientific Quality</h3>
+          <li class="pb-3"> To be considered for publication, the paper must demonstrate originality and contribute new knowledge or insights to the field. A strong paper presents well-structured discussions, accurate methods, and consistent results that align with the study’s objectives. Authors should clearly explain how their work adds value to the field, whether through new findings, improved methods, or deeper insights into known topics </li>
+          <h3 class="text-1xl font-bold text-pink-800 mb-4">5. Structuring Your Manuscript</h3>
+          <li class="pb-3"> A research paper should include essential sections: Title, Authors, Abstract, Keywords, Introduction, Methodology, Analysis, Results, Discussion, Conclusion, Declarations, and References. The author shall ensure the followings: </li>
+          <h4 class="  text-pink-900 mb-3">5.1 Writing Structure</h4>
+          <li class="pb-3"> Ensure that the content flows smoothly and is easy to follow. Avoid too many short paragraphs, as they can make the text feel disconnected. Each paragraph should focus on a clear idea and connect logically with the next. Headings and subheadings should be numbered sequentially and used only when necessary. Avoid excessive headings for short sections. Do not start a paragraph immediately after a heading with a colon, semicolon, or dot; instead, begin the paragraph naturally. The manuscript should be written in a continuous narrative format rather than relying on bullet points or numbered lists.
+        </li>
+          <h4 class="  text-pink-900 mb-3">5.2 Grammar and Tense Use
+        </h4>
+          <li class="pb-3"> Ensure proper grammar and consistent tense use throughout the manuscript. The abstract should mainly use past tense to describe completed research, while present tense may be used for general conclusions. In the introduction, present tense is suitable for discussing general knowledge and background information, but past tense should be used when referring to specific studies. The methodology and results sections should be written in past tense since they describe completed work. In the discussion and conclusion, use past tense to summarize findings and present tense for general conclusions. 
+        </li>
+          <h4 class="  text-pink-900 mb-3">5.3 Title and Author Details
+        </h4>
+          <li class="pb-3"> The title should clearly represent the paper’s content, be specific, and range between 8 to 20 words. Avoid broad or general titles. If the title or abstract includes symbols or mathematical expressions, provide them in LaTeX format. Author details (name, affiliation, and email) should be listed correctly, and the corresponding author should be marked with an asterisk (*). Academic titles and degrees (e.g., Dr., Prof., Ph.D.) should not be included.
+        </li>
+          <h4 class="text-pink-900 mb-3">5.4 Abstract and Keywords
+        </h4>
+          <li class="pb-3"> The abstract should summarize the objective, methodology, and key results within 300 words. It should provide a clear understanding of the paper even when read separately and should not include citations. Keywords should be specific to the topic, with a maximum of three.
+        </li>
+          <h4 class="text-pink-900 mb-3">5.5 Structure and Clarity
+        </h4>
+          <li class="pb-3"> The manuscript should be well-organized and easy to read, with numbered headings and subheadings. Avoid italicized text unless it is for scientific purposes. Figures and tables should be clear, numbered correctly, and referenced in the text. Images should be high resolution and not distorted. Tables should be created using the table tool, not inserted as images. Equations should be written using the equation tool.
+        </li>
+          <h4 class="text-pink-900 mb-3">5.6 Introduction and Literature Review
+        </h4>
+          <li class="pb-3"> The introduction should present the background, current status, knowledge gap, and research objectives in a logical order. The literature review should provide an analytical comparison of different studies rather than a simple summary. Highlight research gaps and show how the current study fits into the broader field. Ensure all claims are supported by properly cited references. Avoid excessive self-citation and unrelated references
+        </li>
+          <h4 class="text-pink-900 mb-3">5.7 Methodology
+        </h4>
+          <li class="pb-3"> Provide a clear and detailed methodology, describing the exact procedures followed in the study. The methodology should be reproducible and include all necessary details to allow other researchers to replicate the work.
+        </li>
+          <h4 class="text-pink-900 mb-3">5.8 Figures and Tables
+        </h4>
+          <li class="pb-3"> Each figure and table should have a descriptive caption and be numbered correctly. Images should be high resolution, not stretched or distorted. Tables should be created using the table tool, not inserted as images. Ensure that all figures and tables are referenced and explained in the text.
+        </li>
+          <h4 class="text-pink-900 mb-3">5.9 Results and Discussion
+        </h4>
+          <li class="pb-3">Present the results clearly and logically, supported by data and analysis. Discuss the significance of the findings and compare them with previous research. Avoid presenting only statistics without discussing their significance. Provide a detailed interpretation of the results and how they align with the research objectives.
+        </li>
+          <h4 class="text-pink-900 mb-3">5.10  Conclusion
+        </h4>
+          <li class="pb-3">The conclusion should summarize the major findings, highlight the novelty, and discuss limitations within 300 words. It should state the significance of the results, how they meet the research objectives, and suggest future research directions. Do not include citations in the conclusion.
+        </li>
+        <h3 class="text-1xl font-bold text-pink-800 mb-4">6.Declarations and Ethical Considerations</h3>
+        <li class="pb-3"> Ensure that the manuscript includes a conflict-of-interest declaration at the end.
+            The author may add the following set of applicable declarations at the end of the manuscript</li>
+            <h4 class="text-pink-900 mb-2">Study Limitation:</h4>
+            <li class="pb-2">Detail of all possible limitations faced in the study that might significantly affect the research outcome, If not applicable, write, none.</li>
+            <h4 class="text-pink-900 mb-2">Acknowledgments:</h4>
+            <li class="pb-2">Acknowledge only those who actively contributed to the research but not listed as an author. If not applicable, write, none</li>
+            <h4 class="text-pink-900 mb-2">Funding Source:</h4>
+            <li class="pb-2">Detail of all funding sources, If not applicable, write, none.</li>
+            <h4 class="text-pink-900 mb-2">Competing Interests:</h4>
+            <li class="pb-2"> The author must add a statement for the potential conflict of interest refer to <a class="font-bold" href="https://aijr.org/about/policies/conflict-of-interest/">this link</a> for more details on competing interests.</li>
+            <h4 class="text-pink-900 mb-2">Warning for Hazard:</h4>
+            <li class="pb-2">If the work involves chemicals, procedures, or equipment that have any unusual hazards inherent in their use, the author must clearly identify these in the manuscript.</li>
+            <h4 class="text-pink-900 mb-2">Use of Generative AI and AI-assisted Technologies in the Writing Process:</h4>
+            <li class="pb-2">During the preparation of this work the author(s) used [NAME TOOL / SERVICE] in order to [REASON]. After using this tool/service[Add Name], the author(s) reviewed and edited the content as needed and take(s) full responsibility for the content of the published article. The said AI-tool was used only to improve the readability and language of the manuscript, and it was not used for content generation.
+                If the work involves the use of human/animal subjects, each manuscript should also contain the following set of declarations-</li>
+            <h4 class="text-pink-900 mb-2">Ethical Approval:</h4>
+            <li class="pb-2">Provide an ethical approval authority name with the reference number. If not required, provide an ethical exemption letter of not required. The author should provide a scanned PDF copy of the ethical approval/exemption letter during manuscript submission. Visit <a class="font-bold" href="https://aijr.org/about/publication-ethics/human-animal-hazard-related-study/">this link</a> for more details on the ethical approval policy.</li>
+            <h4 class="text-pink-900 mb-2">Informed Consent:</h4>
+            <li class="pb-2">Write a statement for the informed consent taken from the patients/participants/respondents to publish this study. The editor may ask to upload the scanned PDF copy if required.  Visit <a class="font-bold" href="https://aijr.org/about/publication-ethics/participant-consent/">this link</a> for more details on the consent requirement.
+            </li>
+            <h3 class="text-1xl font-bold text-pink-800 mb-4">7. Citations & Reference List
+            </h3>
+            <h4 class="text-pink-900 mb-2"> 7.1 Citations and Reference List
+            </h4>
+            <li class="pb-3">Ensure that all references are appropriate for the topic and include key publications expected in the field. Recent references should be included to reflect current research, and excessive citations from a single author or institution should be avoided. All citations should follow
+                <a class="font-bold" href="https://aijr.org/ieee-referencing-style-a-quick-guide/">IEEE formating</a> and be listed in ascending numerical order. Ensure that references are relevant, complete, and accessible, with DOIs or official publisher URLs when available. Citations should be used uniformly throughout the manuscript, not just in the introduction. In the results section, citations should compare findings with previous research, while in the discussion, they should support interpretations and validate observations. Distribute citations thematically across sentences rather than clustering multiple references at once.
+
+
+            </li>
+            <h4 class="text-pink-900 mb-2"> 7.2 In-Text Citation Style
+
+            </h4>
+            <li class="pb-3">In IEEE format, citations should be numerical and not integrated into the sentence structure. Avoid phrases like “According to [15]” and instead state the information directly, followed by the citation. For example, instead of writing “According to [15], companies achieve higher profitability through efficient waste management,” write “Companies achieve higher profitability by adopting efficient waste management strategies [15].” This maintains proper citation formatting and keeps the focus on the content rather than the reference.
+</li>
+
+<h3 class="text-1xl font-bold text-pink-800 mb-4">  8.Originality and Plagiarism
+
+</h3>
+<li class="pb-3">Authors must ensure that their manuscript is original and free from plagiarism. The similarity index (plagiarism) should be less than 10%, as determined by iThenticate (or Turnitin) plagiarism detection software. Manuscripts should not include copied text, figures, or data from other sources without appropriate acknowledgment. Self-plagiarism, including reusing significant parts of the author’s previous work without citation, is also not allowed.
+
+</li>
+<h4 class="text-pink-900 mb-2"> Before submitting,
+
+</h4>
+<li class="pb-3">please ensure that the study design and research argument are structured and articulated properly. When you're satisfied that your submission meets the above structuring guide and quality standard, 
+</li>
+
+
+        </ul>
+        <h2 class="text-2xl pt-5 font-bold text-pink-800">Submission Guidelines</h2>
+        <h3 class="text-xl font-semibold text-pink-700 mt-3 mb-2">•	Manuscripts for ICAMC-2026 will ONLY be accepted in electronic format through online submission system. Submit your paper at:</h3>
+ <!-- Submission Button--> 
+      <div class="m-8 pt-5  text-center">
+        <a
+          href="https://cmt3.research.microsoft.com/ICAMC2025"
+          target="_blank"
+          class="px-10 py-6 bg-gradient-to-r from-pink-700 to-pink-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-pink-400"
+        >
+          Submit the paper
+        </a>
+      </div>
+       
+      </section>
+    </div>
+
+    <!-- Conference Details with AI Icons -->
+    <section class="py-10 px-6 relative">
+      <div class="max-w-5xl mx-auto text-center relative">
+        <h2 class="text-4xl font-bold text-pink-800 flex items-center justify-center">
+          <span class="ai-icon w-40 h-10 mr-6 inline-block"></span> 
+        </h2>
+        <p class="text-gray-300 text-3xl mt-4 italic">
+  International Conference on Emerging Applications of <br>
+  <span class="text-blue-300">Artificial Intelligence, Machine Learning,</span> <br>
+  and <span class="text-blue-300">Cybersecurity 2026</span>
+</p>
+
+        <!-- <p class="text-pink-600 text-md mt-2 text-2xl   ">
+          The International Conference on Artificial Intelligence and Automation in Business Management (ICAMC) is a premier event focused on exploring innovative applications of AI and automation in various industries. 
+          ICAMC 2026 brings together researchers, academicians, and industry professionals to share insights, foster collaborations, and advance the field of artificial intelligence and automation. 
+          Join us to witness cutting-edge research and groundbreaking ideas that redefine the future of business management.
+        </p> -->
+      </div>
+    </section>
+
+    <!-- Map Integration with Right Alignment -->
+    <section class="py-10 px-6 flex flex-col md:flex-row items-center">
+      <div class="w-full md:w-1/2 mb-8 md:mb-0">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.505619213644!2d77.15033821550202!3d28.82380308214822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390daaf4c884f85b%3A0x1c00e11a9ce7433c!2sHMR%20Institute%20of%20Technology%20and%20Management!5e0!3m2!1sen!2sin!4v1588921739579!5m2!1sen!2sin"
+          width="100%"
+          height="300"
+          class="border-0 rounded-lg shadow-lg"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="w-full md:w-1/2 text-center">
+        <h3 class="text-3xl font-semibold text-blue-300">Event Venue:</h3>
+        <p class="text-gray-400 text-2xl">HMR Institute of Technology and Management</p>
+        <p class="text-gray-500">Plot No. 326, Bakoli HMRITM Rd, Delhi</p>
+        <p class="text-gray-500">New Delhi, 110036</p>
+      </div>
+    </section>
+   
+    <!-- Footer Bottom -->
+    <div class="text-center text-gray-500 text-sm mt-6">
+        &copy; 2026 ICAMC HMRITM. All Rights Reserved.
+      </div>
+    </footer>
+    </div>
+    </div>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
+
+     
+
+     
+
+     
+
+     
