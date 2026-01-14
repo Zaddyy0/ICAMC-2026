@@ -141,24 +141,45 @@ body {
 }
 
 /* ===== SLIDESHOW ===== */
+/* ================================
+   PREVIOUS CONFERENCE SLIDESHOW
+   ================================ */
+
 .slideshow-container {
   position: relative;
-  max-width: 100%;
-  height: 400px;
+  width: 100%;
+  max-width: 1100px;
+  height: 480px;
   margin: auto;
   overflow: hidden;
-  border: 2px solid var(--border-color);
   border-radius: 14px;
-  box-shadow: 0 35px 80px rgba(0,0,0,0.9);
 }
 
+/* Hide all images by default */
 .slideshow-container img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
-  animation: fade 9s infinite;
-  filter: contrast(105%) brightness(90%);
+  opacity: 0;
+  animation: slideshow 25s infinite;
+}
+
+/* Timing for each image */
+.slideshow-container img:nth-child(1) { animation-delay: 0s; }
+.slideshow-container img:nth-child(2) { animation-delay: 5s; }
+.slideshow-container img:nth-child(3) { animation-delay: 10s; }
+.slideshow-container img:nth-child(4) { animation-delay: 15s; }
+.slideshow-container img:nth-child(5) { animation-delay: 20s; }
+
+/* Fade animation */
+@keyframes slideshow {
+  0%   { opacity: 0; }
+  4%   { opacity: 1; }
+  20%  { opacity: 1; }
+  24%  { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 @keyframes fade {
